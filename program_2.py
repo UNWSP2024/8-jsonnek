@@ -16,9 +16,10 @@ def word_separator(sentence):
         result += char
     return result.strip()
 
-# Get User input
-user_input = input("Enter a sentence: ")
+if __name__ == '__main__':
+    # Get User input
+    user_input = input("Enter a sentence: ")
 
-# Call Function and print
-new_sentence = word_separator(user_input)
-print(new_sentence)
+    # Call Function and print
+    new_sentence = word_separator(user_input)
+    print(new_sentence)
