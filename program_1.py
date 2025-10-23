@@ -1,4 +1,7 @@
+# Jonathan Sonnek
+# October 21 2025
 # Program #1: Initials
+
 # Write a program that gets a string containing a person's first, middle, and last names, 
 # and displays their first, middle, and last initials.  
 # For example, if the user enters John William Smith, the program should display J. W. S.
@@ -9,10 +12,12 @@ def initials_generator(personsName):
 
     personsInitials = ""
     #    Add your logic here
-
+    name = personsName.split(" ")
+    for string in name:
+        personsInitials += string[0].upper() + ". "
     return personsInitials.strip()
 
-personsName = input('Enter the users first, middle, and last name')
+personsName = input('Enter the users first, middle, and last name:')
 
 initials = initials_generator(personsName)
 
